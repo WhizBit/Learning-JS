@@ -34,3 +34,29 @@ const myFunction = function(){
 }
 myFunction()
 console.log(typeof myFunction)
+
+
+// +++++++++++++++++++++++++++++++++
+
+//Memory in Js
+// Stack(Primitive), Heap (Non-Primitive)
+//When we take copy from heap it gives the referance to the origional value 
+
+
+// This will go in Stack
+let MyYotubeName = 'NamanGarg'
+let anotherName = MyYotubeName
+anotherName = 'ChaiAndSutta'
+console.log(anotherName)
+console.log(MyYotubeName) // Here Copy is being made for MyYotubeName 
+
+// This will go in Heap
+let UserOne = {
+    email : 'naman23100@gmail.com',
+    upi : 'namangarg@hdfcok'
+}
+let UserTwo = UserOne // Here pointing to the origional value Location 
+UserTwo.email = 'NamanGargIIITNR@gmail.com'
+console.log(UserOne.email)
+
+
