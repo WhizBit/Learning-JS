@@ -49,7 +49,7 @@ console.log(LoginStatus)
 console.log(NUllStatus) // It will take empty parameter as Undefined
 
 const Sum3 = function (a,b){ // Naming Function in Different Manner
-    return a+b
+    return a+b  // It is also termed as Expression
 }
 const Suming = Sum3(1,2)
 console.log(Suming)
