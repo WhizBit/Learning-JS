@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: blueviolet;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = 'Main'
+    div.id = Math.floor(Math.random() * 10 + 1)
+    div.setAttribute('Title', 'Generated Title') // Directly set without bringing the value in the variable , 1 Round
+    div.style.backgroundColor = 'green'
+    div.style.padding = '12px'
+    // div.innerHTML = 'Hey There I got it' // First brings what is in that place and then change its value , 2 Round
+    // Till now div is in Memory but not attahched to the page
+    const text1= document.createTextNode('Hey There I got it') // Here we are not going in the inner text but creating our own text Node
+    div.appendChild(text1) // Here also we are having 2 rounds
+
+    document.body.appendChild(div)
+</script>
+</html>

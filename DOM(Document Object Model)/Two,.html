@@ -17,8 +17,17 @@
     </div>
 </body>
 <script>
-    const Var = document.querySelector('.parent')
+    const Var = document.querySelector('.Parent')
     console.log(Var)
     console.log(Var.children)
+    Var.children[1].style.color = 'red'
+    console.log(Var.firstElementChild);
+    console.log(Var.lastElementChild);
+    const Day = document.querySelector('.day');
+    // console.log(Day)
+    // console.log(Day.parentElement) // Here we see that functions are travelling Tree Structure to fetch the element 
+    // console.log(Day.nextElementSibling)
+
+    console.log(Var.childNodes); // Like break is also counted in these nodes
 </script>
 </html>
