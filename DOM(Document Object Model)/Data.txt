@@ -1,0 +1,11 @@
+document.querySelector('h1')
+Will give the first h1 present in the HTML 
+
+With # we pass id and with . we pass class Name 
+
+Can store it in a variable/constant and apply QuerySelector on that 
+
+From HTML we get the NodeList of Elements using QuerySelectorAll, Cannot apply map on them like normal Array
+
+document.getElementByClassName -> Gives HTML Collection 
+
