@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code</title>
+</head>
+<body style="background-color: blueviolet; color: beige;">
+    <ul class="L">
+        <li>
+            JavaScript
+        </li>
+        <li>
+            Python
+        </li>
+        <li>
+            C++
+        </li>
+    </ul> 
+</body>
+<script>
+    function addLang(langname) {
+        const list = document.createElement('li')
+        list.innerHTML = `${langname}` // Here traversal of tree happens
+        document.querySelector('.L').appendChild(list)
+    }
+    addLang('Swift') // As it is adding element at the end it is traversing tree again and again that causes issue in Optimization 
+    addLang('R')
+
+    function AddOptiLang(langname){
+        const list = document.createElement('li')
+        list.appendChild(document.createTextNode(langname))    
+        document.querySelector('.L').appendChild(list) // Here we have just created Li and inserted data in it, No traversal
+    }
+    AddOptiLang('Ruby')
+
+    //Editing
+    const SecondLan = document.querySelector("li:nth-child(2)")
+    const li1 = document.createElement('li')
+    li1.textContent = 'Java'
+    SecondLan.replaceWith(li1)
+
+    //Edit2 
+    const Firstlang = document.querySelector("li:first-child")
+    Firstlang.outerHTML = '<li>TypeScript</li>'
+
+    //Remove
+    const LastLang = document.querySelector('li:last-child')
+    LastLang.remove()
+
+</script>
+</html>

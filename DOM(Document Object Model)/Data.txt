@@ -9,3 +9,4 @@ From HTML we get the NodeList of Elements using QuerySelectorAll, Cannot apply m
 
 document.getElementByClassName -> Gives HTML Collection 
 
+ul.langauge -> Shortcut to write <ul class="language"></ul> 
